@@ -1,5 +1,5 @@
 {
-    "name": "jtl/connector",
+    "name": "terra-vinum/connector-core",
     "type": "library",
     "description": "JTL-Connector protocol library and classes",
     "keywords": ["jtl", "connector", "protocol", "model", "data"],
