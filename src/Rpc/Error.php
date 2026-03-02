@@ -48,6 +48,9 @@ class Error
      */
     public static function createDataFromException(\Throwable $exception, ?string $additionalMessage = null): string
     {
+
+        \Sentry\captureException($exception);
+
         $lastSlashPos = \strrpos($exception->getFile(), '/');
         if ($lastSlashPos === false) {
             throw new \RuntimeException('error while parsing...');
